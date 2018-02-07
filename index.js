@@ -18,10 +18,11 @@ function nowServing(firstInLine){
 function currentLine(katzDeliLine){
   if (katzDeliLine.length == 0){
     return "The line is currently empty.";
-  }
-    var lineList = "The line is currently: 1. ${katzDeliLine[0]}";
+  } else {
+    var lineList = "The line is currently: 1. ${katzDeliLine}";
     for (let i = 1; i < katzDeliLine.length; i++){
       lineList += ", ${i + 1}. ${katzDeliLine[i]}"
     }
+  }
   return lineList
 }
